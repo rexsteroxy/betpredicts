@@ -6,7 +6,7 @@
 			any game you think will scale out green.<br><br>
 			And a medium whereby you can get sure games to play for free.
 		</p></h3>
-		<a href="#" class="btn btn-primary">Get Started</a><br><br><br><br>
+		<a href="/predict" class="btn btn-primary">Get Started</a><br><br><br><br>
 
 
 @endsection
