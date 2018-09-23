@@ -8,11 +8,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">KAKABET</a>
+          @if (Auth::check())
+           <a class="navbar-brand" href="#">{{Auth::user()->name}} Welcome to</a>
+           @endif
+          <a class="navbar-brand" href="#">PACASH</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class={{Request::is('home') ? 'active': ''}}><a href="/home">Home</a></li>
+            <li class={{Request::is('/') ? 'active': ''}}><a href="/">Home</a></li>
             <li class={{Request::is('predict') ? 'active': ''}}><a href="/predict">Predict Your Game</a></li>
             <li class={{Request::is('games') ? 'active': ''}}><a href="/games">View sure games</a></li>
             <li class={{Request::is('about') ? 'active': ''}}><a href="/about">About Us</a></li>
@@ -20,8 +23,9 @@
           </ul>
         <div>
           <ul class="nav navbar-nav navbar-right">
-            <li class={{Request::is('#') ? 'active': ''}}><a href="/games">Register</a></li>
-            <li class={{Request::is('#') ? 'active': ''}}><a href="/login">login</a></li>
+            <li class={{Request::is('register') ? 'active': ''}}><a href="/games">Register</a></li>
+            <li class={{Request::is('login') ? 'active': ''}}><a href="/login">login</a></li>
+            <li class={{Request::is('logout') ? 'active': ''}}><a href="/logout">logout</a></li>
           </ul>
         </div><!--/.nav-collapse -->
     </div>

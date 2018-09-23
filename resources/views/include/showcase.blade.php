@@ -6,7 +6,7 @@
 
 <div class="jumbotron text-center">
 	<div class="container">
-		<h1>Welcome to Kakabet <span class="glyphicon glyphicon-thumbs-up"></span></h1>
+		<h1>Welcome to Pacash <span class="glyphicon glyphicon-thumbs-up"></span></h1>
 		<p class="lead text-uppercase">Don’t look further, This is the home for sure games.</p>
 
 		<a href="" class="btn btn-primary">Get Started</a>

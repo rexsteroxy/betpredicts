@@ -34,7 +34,7 @@
 	<body>
 		<div>
 			@include('include.header')
-			@if(Request::is('home'))
+			@if(Request::is('/'))
 			@include('include.showcase')
 			@endif
 		</div>

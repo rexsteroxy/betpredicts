@@ -21,7 +21,7 @@ class MessagesController extends Controller
     	$message->save();
     	//redirecting the controller
 
-    	return redirect('home')->with('success','Message Sent');
+    	return redirect('/')->with('success','Message Sent');
     }
     public function getMessages(){
     	$messages = Message::all();

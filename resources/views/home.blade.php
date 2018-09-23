@@ -2,7 +2,7 @@
 @section('content')
 	<h1  class="text-black">Drop Your Sure Predicted Games Here And Get Your Reward.</h1>
 		<h3><p class="text-black">
-			Kaka prediction game is a medium whereby you can drop 
+			Pacash prediction game is a medium whereby you can drop 
 			any game you think will scale out green.<br><br>
 			And a medium whereby you can get sure games to play for free.
 		</p></h3>

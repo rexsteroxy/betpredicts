@@ -7,26 +7,29 @@
 	<h2 class="text-black">Already Registered?</h2><h4><a href="/login">Click Here</a></h4>
 	<br><br>
 	<h1 class="text-black">Registeration form</h1><br>	
-		{!! Form::open(['url' => 'games/submit']) !!}
+		<form action="/register" method="Post">
+            {{ csrf_field() }}
     		<div class="form-group">
-    			{{Form::label('name', 'Name')}}
-    			{{Form::text('name','', ['class' => 'form-control','placeholder' => 'Enter your name'])}}
+    			<label for="name">Name:</label>
+                <input type="text" name="name" class="form-control" placeholder="Enter your name">
     		</div>
     		<div class="form-group">
-    			{{Form::label('number', 'Phone-Number')}}
-    			{{Form::number('number','', ['class' => 'form-control','placeholder' => 'Enter your phone number'])}}
+                <label for="number">Phone-Number:</label>
+                <input type="number" name="number" class="form-control" placeholder="Enter your number">
     		</div>
     		<div class="form-group">
-    			{{Form::label('password', 'Password')}}
-    			{{Form::text('password','', ['class' => 'form-control','placeholder' => 'Enter Your Password'])}}
-    		</div>
+                <label for="password">Password:</label>
+                <input type="Password" name="password" class="form-control" placeholder="Enter your Password">
+            </div>
     		<div class="form-group">
-    			{{Form::label('password_2', 'Retype Password')}}
-    			{{Form::text('password_2','', ['class' => 'form-control','placeholder' => 'Retype Your Password'])}}
-    		</div>
+                <label for="password_confirmation">Confirm Password:</label>
+                <input type="Password" name="password_confirmation" class="form-control" placeholder="Confirm Your Password">
+            </div>
     		<div>
-    			{{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
+    			<input type="submit" name="submit" class="btn btn-primary">
     		</div><br><br><br><br>
-		{!! Form::close() !!}
+
+
+		</form>
 
 @endsection
